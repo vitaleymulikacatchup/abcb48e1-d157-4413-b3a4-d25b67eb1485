@@ -4,8 +4,6 @@ import BillboardHero from '@/components/sections/layouts/hero/BillboardHero';
 import BentoMediaGallery from '@/components/bento/BentoMediaGallery/BentoMediaGallery';
 import TextboxContentRich from '@/components/textbox/TextboxContentRich';
 import ButtonTextUnderline from '@/components/buttons/ButtonTextUnderline';
-import TestimonialCard from '@/components/testimonial/TestimonialCard';
-import Form from '@/components/forms/Form';
 
 const Home = () => {
   return (
@@ -49,8 +47,14 @@ const Home = () => {
       <section id="testimonials" className="bg-pattern">
         <h2 className="text-center text-4xl font-bold">Testimonials</h2>
         <div className="flex flex-col gap-4">
-          <TestimonialCard quote="I found my dream car in no time!" author="John Doe" />
-          <TestimonialCard quote="Super seamless experience and great pricing!" author="Jane Smith" />
+          <div className="bg-white p-4 rounded-lg shadow">
+            <p className="italic">"I found my dream car in no time!"</p>
+            <p className="font-bold">- John Doe</p>
+          </div>
+          <div className="bg-white p-4 rounded-lg shadow">
+            <p className="italic">"Super seamless experience and great pricing!"</p>
+            <p className="font-bold">- Jane Smith</p>
+          </div>
         </div>
       </section>
 
@@ -64,7 +68,8 @@ const Home = () => {
       </section>
 
       <section id="contact" className="bg-white">
-        <Form />
+        <h2 className="text-2xl font-bold">Contact Us</h2>
+        <p>If you have any questions, don't hesitate to reach out!</p>
       </section>
     </SiteThemeProvider>
   );
