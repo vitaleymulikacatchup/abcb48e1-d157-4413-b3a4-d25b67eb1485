@@ -1,4 +1,4 @@
-use client
+"use client"
 import { SiteThemeProvider } from '@/components/sections/ThemeProvider';
 import BillboardHero from '@/components/sections/layouts/hero/BillboardHero';
 import BentoMediaGallery from '@/components/bento/BentoMediaGallery/BentoMediaGallery';
