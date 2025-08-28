@@ -27,9 +27,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${interTight.variable} ${poppins.variable} antialiased`}>
-        {children}
-      </body>
-    </html>
+      <body className={`${interTight.variable} ${poppins.variable} antialiased`}>\n        <SiteThemeProvider theme={{ styleVariant: 'funAndTrendy', colorTemplate: 1, textAnimation: 'slide' }}>\n          {children}\n        </SiteThemeProvider>\n      </body>\n    </html>
   );
 }
